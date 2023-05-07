@@ -94,7 +94,7 @@ export function Content() {
         </div>
       </div>
       <div >
-        <h2 className={styles.projectsTitle}>Cadastre uma rainha tech:</h2>
+        <h2 className={styles.projectsTitle}>Cadastre uma sugestão de livro:</h2>
         <form  className={styles.form} onSubmit={handleCreateMessage}>
           <input 
             onChange={handleInputValueTitle} 
@@ -116,11 +116,11 @@ export function Content() {
           />
           <textarea 
             onChange={handleInputValueEditor} 
-            placeholder="Digite a citação"
+            placeholder="Digite a editora"
             value={editor}
             className={styles.formTextArea}
           />
-          <button className={styles.formButton} type="submit">Enviar sugestão da livro</button>
+          <button className={styles.formButton} type="submit">Enviar sugestão de livro</button>
           {success && <p>Cadastro realizado com sucesso.</p>}
         </form>
       </div>
